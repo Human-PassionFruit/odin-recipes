@@ -9,9 +9,22 @@
 
 <body>
 
-    
+        <header>
         <h1>Odin's Recipes</h1>
         <h2>Simple Chinese dishes</h2>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="recipes/Chinese-Boneless-Spare-Ribs.html">Chinese Boneless Spare Ribs</a></li>
+                <li><a href="recipes/Easy-Chicken-Fried_Rice.html">Easy Chicken Fried Rice</a></li>
+                <li><a href="recipes/Chinese_Chicken_Dumplings.html">Chinese Chicken Dumplings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
 
     <main>
 
@@ -36,5 +49,44 @@
                 <br><a href="recipes/Chinese_Chicken_Dumplings.html">View Recipe</a>
             </p>
 
+
+
+
+
+
+
+
+<h2>Recipe Feedback</h2>
+
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <br><br>
+
+    <label for="rating">Rate this recipe:</label>
+    <select id="rating" name="rating">
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Good</option>
+        <option value="3">3 - Average</option>
+        <option value="2">2 - Poor</option>
+        <option value="1">1 - Very Poor</option>
+    </select>
+
+    <br><br>
+
+    <label for="comments">Comments:</label>
+    <br>
+    <textarea id="comments" name="comments" rows="4" cols="40"
+        placeholder="Write your feedback here..."></textarea>
+
+    <br><br>
+
+    <button type="submit">Submit Feedback</button>
+</form>
+
 </body>
+<footer>
+    <p>Nicko's Odin recipe project on Ite 10 Practical exercise 5.</p>
+</footer>
 </html>
